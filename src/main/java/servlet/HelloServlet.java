@@ -24,7 +24,7 @@ public class HelloServlet extends HttpServlet {
     {
         String code, nom,prenom,datenaissance,mail,tel,statuts,password,type;
         RequestDispatcher rd;
-        code=requete.getParameter("code");
+        code=requete.getParameter("codeu");
         nom=requete.getParameter("nom");
         prenom=requete.getParameter("prenom");
         datenaissance=requete.getParameter("datenaissance");
