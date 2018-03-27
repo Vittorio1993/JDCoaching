@@ -5,5 +5,8 @@ tomcat.5000
 # IntelliJ Idea project files
 .idea
 *.iml
+<<<<<<< HEAD
 JDCoaching/12345.txt
 JDCoaching/123.txt
+=======
+>>>>>>> master
