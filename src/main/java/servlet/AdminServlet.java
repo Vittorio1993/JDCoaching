@@ -9,19 +9,30 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ *
+ * @author Alexandre
+ */
 @WebServlet(
-        name = "MyServlet", 
+        name = "MyServlet",
         urlPatterns = {"/hello"}
     )
-public class HelloServlet extends HttpServlet {
+public class AdminServlet extends HttpServlet {
 
+    /**
+     *
+     * @param req request
+     * @param resp response
+     * @throws ServletException ServletException
+     * @throws IOException IOException
+     */
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    protected void doGet(final HttpServletRequest req,
+                final HttpServletResponse resp)
             throws ServletException, IOException {
         ServletOutputStream out = resp.getOutputStream();
         out.write("hello heroku".getBytes());
         out.flush();
         out.close();
     }
-    
 }
