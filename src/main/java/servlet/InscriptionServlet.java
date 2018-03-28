@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
-        name = "MyServlet", 
-        urlPatterns = {"/hello"}
+        name = "InscriptionServlet", 
+        urlPatterns = {"/inscription"}
     )
-public class HelloServlet extends HttpServlet {
+public class InscriptionServlet extends HttpServlet {
 
     @Override
      public void doGet(HttpServletRequest requete,
